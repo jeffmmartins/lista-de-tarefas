@@ -1,4 +1,4 @@
-import style from "./Style/ToDo.module.css";
+import style from "../style/ToDo.module.css"
 import { GrTrash } from "react-icons/gr";
 
 const ToDo = ({ tarefas, removerTarefa }) => {
