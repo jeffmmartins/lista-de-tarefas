@@ -1,18 +1,13 @@
-
-import './App.css'
-import Header from './components/Header'
-import NewToDoForm from './components/NewToDoForm'
+import Header from "./components/Header";
+import NewToDoForm from "./components/NewToDoForm";
 
 function App() {
-  
-
   return (
     <div>
-      <Header/>
-      <NewToDoForm/>
+      <Header />
+      <NewToDoForm />
     </div>
-      
-  )
+  );
 }
 
-export default App
+export default App;

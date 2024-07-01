@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ListaTarefaContext } from "../../context/ToDos";
 import ToDo from "../ToDo";
+import style from "../style/NewToDoForm.module.css"
 
 const NewToDoForm = () => {
   const { tarefas, infoForm, register, handleSubmit, removerTarefa } =
@@ -8,8 +9,7 @@ const NewToDoForm = () => {
 
   return (
     <div>
-      <ToDo tarefas={tarefas} removerTarefa={removerTarefa} />
-      <form onSubmit={handleSubmit(infoForm)}>
+      <form className={style.container} onSubmit={handleSubmit(infoForm)}>
         <input
           type="text"
           placeholder="Exemplo: Estudar"
@@ -17,6 +17,7 @@ const NewToDoForm = () => {
         />
         <button>Adicionar Tarefa</button>
       </form>
+      <ToDo tarefas={tarefas} removerTarefa={removerTarefa} />
     </div>
   );
 };
