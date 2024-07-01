@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ListaTarefaContext } from "../../context/ToDos";
-import ToDo from "./ToDo";
+import ToDo from "../ToDo";
 
 const NewToDoForm = () => {
   const { tarefas, infoForm, register, handleSubmit, removerTarefa } =
