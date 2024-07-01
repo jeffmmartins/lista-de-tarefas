@@ -1,5 +1,5 @@
 import { BsRocketFill } from "react-icons/bs";
-import style from "../cmponents/Style/Header.module.css"
+import style from "../Header/../style/Header.module.css"
 
 const Header = () => {
   return (
