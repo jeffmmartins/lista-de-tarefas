@@ -10,7 +10,7 @@ const NewToDoForm = () => {
 
   return (
     <div>
-      <form className={style.container} onSubmit={handleSubmit(infoForm)}>
+      <form className={style.containerForm} onSubmit={handleSubmit(infoForm)}>
         <input
           type="text"
           placeholder="Adicionar uma tarefa"
