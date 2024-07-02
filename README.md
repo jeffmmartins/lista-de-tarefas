@@ -4,12 +4,11 @@ Esse projeto Lista de Tarefas é intuitivo e responsivo, foi desenvolvindo para 
 Garantindo que você tenha acesso a elas a qualquer momento. 
 
 
-
-1. Uso 
+## Uso 
   Nesse projeto é possivel adcionar as tarefas desejadas e caso tenha concluido alguma tarefa
   pode marca-las como concluída clicando na caixa de seleção ao lado delas para remover da lista.
 
-2. Tecnologias
+## Tecnologias
   - React
   - CSS Module
   - React-icons
