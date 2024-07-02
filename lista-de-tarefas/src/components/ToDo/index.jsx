@@ -1,4 +1,4 @@
-import style from "../style/ToDo.module.css"
+import style from "../style/ToDo.module.css";
 import { ImCheckboxUnchecked } from "react-icons/im";
 
 const ToDo = ({ tarefas, removerTarefa }) => {
@@ -6,10 +6,10 @@ const ToDo = ({ tarefas, removerTarefa }) => {
     <div>
       {tarefas.map((tarefa, index) => (
         <div key={index} className={style.lista}>
-        <p className={style.tarefas}>
-          {tarefa}
-        </p> 
-        <button  onClick={() => removerTarefa(index)}><ImCheckboxUnchecked /></button>
+          <p className={style.tarefas}>{tarefa}</p>
+          <button onClick={() => removerTarefa(index)}>
+            <ImCheckboxUnchecked />
+          </button>
         </div>
       ))}
     </div>

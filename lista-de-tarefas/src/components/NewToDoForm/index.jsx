@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ListaTarefaContext } from "../../context/ToDos";
 import ToDo from "../ToDo";
-import style from "../style/NewToDoForm.module.css"
+import style from "../style/NewToDoForm.module.css";
 import { GoPlus } from "react-icons/go";
 
 const NewToDoForm = () => {
@@ -16,7 +16,9 @@ const NewToDoForm = () => {
           placeholder="Adicionar uma tarefa"
           {...register("tarefa")}
         />
-        <button className={style.button}><GoPlus className={style.icon}/></button>
+        <button className={style.button}>
+          <GoPlus className={style.icon} />
+        </button>
       </form>
       <ToDo tarefas={tarefas} removerTarefa={removerTarefa} />
     </div>
