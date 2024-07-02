@@ -1,5 +1,5 @@
 import style from "../style/ToDo.module.css"
-import { GrTrash } from "react-icons/gr";
+import { ImCheckboxUnchecked } from "react-icons/im";
 
 const ToDo = ({ tarefas, removerTarefa }) => {
   return (
@@ -9,7 +9,7 @@ const ToDo = ({ tarefas, removerTarefa }) => {
         <p className={style.tarefas}>
           {tarefa}
         </p> 
-        <button  onClick={() => removerTarefa(index)}><GrTrash /></button>
+        <button  onClick={() => removerTarefa(index)}><ImCheckboxUnchecked /></button>
         </div>
       ))}
     </div>
